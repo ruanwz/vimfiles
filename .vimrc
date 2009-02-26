@@ -53,8 +53,6 @@ map <C-\> :GtagsCursor<CR>
 nmap <silent> <Leader>P <Plug>ToggleProject
 let g:proj_flags="imstg"
 set path=.,/usr/include,/vob/ltecore/src/mme/inc,/vob/ltecore/src/cmn/inc,/vob/ltecore/src/gw/inc
-let g:github_user="ruanwz"
-let g:github_token=""
 map <unique> <silent> <Leader>f <Plug>SimpleFold_Foldsearch
 let mapleader = "," 
 set tabstop=2

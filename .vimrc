@@ -59,3 +59,7 @@ map <unique> <silent> <Leader>f <Plug>SimpleFold_Foldsearch
 let mapleader = "," 
 set tabstop=2
 set foldmethod=syntax
+compiler ruby         " Enable compiler support for ruby
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1

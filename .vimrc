@@ -51,6 +51,8 @@ map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 map <C-\> :GtagsCursor<CR>
 nmap <silent> <Leader>P <Plug>ToggleProject
+nmap <silent> <Leader>tn :tabnext<CR>
+nmap <silent> <Leader>tp :tabprevious<CR>
 let g:proj_flags="imstg"
 set path=.,/usr/include,/vob/ltecore/src/mme/inc,/vob/ltecore/src/cmn/inc,/vob/ltecore/src/gw/inc
 map <unique> <silent> <Leader>f <Plug>SimpleFold_Foldsearch

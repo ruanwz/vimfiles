@@ -1,4 +1,4 @@
-set runtimepath=~/gitrepos/vimfiles,~/gitrepos/vim-rails,~/gitrepos/vim-ruby,~/gitrepos/vim-erlang,$VIMRUNTIME
+set runtimepath=~/gitrepos/vimfiles,~/gitrepos/vim-rails,~/gitrepos/vim-ruby,~/gitrepos/vim-erlang,~/gitrepos/git-vim,$VIMRUNTIME
 syntax on
 set nocompatible
 filetype plugin indent on

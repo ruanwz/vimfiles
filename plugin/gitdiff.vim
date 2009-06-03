@@ -86,6 +86,7 @@ function! s:GitChanges(...)
   let prefix = system("git rev-parse --show-prefix")
   let thisfile = substitute(expand("%"),getcwd(),'','')
   let gitfile = substitute(prefix,'\n$','','') . thisfile
+  let gitfile = substitute(gitfile,'^/','','') . thisfile
 	
 	" Reset syntax highlighting
 	

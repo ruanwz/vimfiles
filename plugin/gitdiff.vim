@@ -47,6 +47,7 @@ function! s:GitDiff(...)
     let prefix = system("git rev-parse --show-prefix")
     let thisfile = substitute(expand("%"),getcwd(),'','')
     let gitfile = substitute(prefix,'\n$','','') . thisfile
+  let gitfile = substitute(gitfile,'^/','','') . thisfile
 
     " Check out the revision to a temp file
     let tmpfile = tempname()

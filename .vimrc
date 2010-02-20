@@ -1,4 +1,4 @@
-set runtimepath=~/gitrepos/vimfiles,~/gitrepos/vim-rails,~/gitrepos/vim-ruby,~/gitrepos/vim-erlang,~/gitrepos/git-vim,$VIMRUNTIME
+set runtimepath=~/gitrepos/vimfiles,~/gitrepos/vim-rails,~/gitrepos/vim-ruby,~/gitrepos/vim-erlang,~/gitrepos/git-vim,~/gitrepos/snipmate.vim,$VIMRUNTIME
 syntax on
 set nocompatible
 filetype plugin indent on
@@ -63,3 +63,5 @@ compiler ruby         " Enable compiler support for ruby
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
+set fileencodings=utf-8,gb2312,gbk,gb18030
+ruby require 'rubygems'

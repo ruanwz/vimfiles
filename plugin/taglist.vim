@@ -422,6 +422,10 @@ let s:tlist_def_javascript_settings = 'javascript;f:function'
 " lisp language
 let s:tlist_def_lisp_settings = 'lisp;f:function'
 
+" clojure language
+let s:tlist_def_clojure_settings = 'clojure;f:function'
+
+
 " lua language
 let s:tlist_def_lua_settings = 'lua;f:function'
 
@@ -941,7 +945,15 @@ function! s:Tlist_FileType_Init(ftype)
         let ctags_flags = ctags_flags . flag
     endwhile
 
-    let s:tlist_{a:ftype}_ctags_args = '--language-force=' . ctags_ftype .
+    if ctags_ftype == 'clojure'
+      let my_ftype = 'lisp'
+    else
+      let my_ftype = ctags_ftype
+    endif
+    echomsg ctags_ftype
+
+    "let s:tlist_{a:ftype}_ctags_args = '--language-force=' . ctags_ftype .
+    let s:tlist_{a:ftype}_ctags_args = '--language-force=' . my_ftype .
                             \ ' --' . ctags_ftype . '-types=' . ctags_flags
     let s:tlist_{a:ftype}_count = cnt
     let s:tlist_{a:ftype}_ctags_flags = ctags_flags

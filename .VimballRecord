@@ -1,1 +1,2 @@
 gitdiff.vba: call delete('/home/david/gitrepos/vimfiles/plugin/gitdiff.vim')
+conque_1.1.vba: call delete('/home/ruan/gitrepos/vimfiles/autoload/conque_term.vim')|call delete('/home/ruan/gitrepos/vimfiles/doc/conque_term.txt')|call delete('/home/ruan/gitrepos/vimfiles/plugin/conque_term.vim')|call delete('/home/ruan/gitrepos/vimfiles/syntax/conque_term.vim')

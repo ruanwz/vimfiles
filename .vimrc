@@ -1,4 +1,4 @@
-set runtimepath=~/gitrepos/vimfiles,~/gitrepos/vim-rails,~/gitrepos/vim-ruby,~/gitrepos/vim-erlang,~/hgrepos/vimclojure/vim,~/gitrepos/git-vim,~/gitrepos/snipmate.vim,$VIMRUNTIME,~/gitrepos/snipmate.vim/after
+set runtimepath=~/gitrepos/vimfiles,~/gitrepos/vim-fugitive,~/gitrepos/vim-rails,~/gitrepos/vim-ruby,~/gitrepos/vim-erlang,~/gitrepos/git-vim,~/hgrepos/vimclojure/vim,~/gitrepos/snipmate.vim,$VIMRUNTIME,~/gitrepos/snipmate.vim/after
 syntax on
 set nocompatible
 filetype plugin indent on
@@ -69,4 +69,12 @@ set fileencodings=utf-8,gb2312,gbk,gb18030
 set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
-
+"clojure
+let clj_highlight_builtins = 1
+let clj_highlight_contrib = 1
+let g:clj_paren_rainbow=1
+autocmd BufNewFile,BufRead *.clj set filetype=clojure
+au Bufenter,Bufnewfile *.clj setl complete+=k~/.clj_completions
+"let vimclojure#NailgunClient = "/home/david/gitrepos/vimclojure/ng"
+let g:clj_want_gorilla = 1
+let vimclojure#WantNailgun = 1

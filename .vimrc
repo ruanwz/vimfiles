@@ -70,9 +70,11 @@ set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 "clojure
-let clj_highlight_builtins = 1
-let clj_highlight_contrib = 1
-let g:clj_paren_rainbow=1
+"let clj_highlight_builtins = 1
+let vimclojure#HighlightBuiltins = 1
+"let clj_highlight_contrib = 1
+"let g:clj_paren_rainbow=1
+let vimclojure#ParenRainbow=1
 autocmd BufNewFile,BufRead *.clj set filetype=clojure
 au Bufenter,Bufnewfile *.clj setl complete+=k~/.clj_completions
 "let vimclojure#NailgunClient = "/home/david/gitrepos/vimclojure/ng"

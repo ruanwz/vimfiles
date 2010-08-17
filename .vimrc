@@ -1,4 +1,4 @@
-set runtimepath=~/gitrepos/vimfiles,~/gitrepos/gist-vim,~/gitrepos/vim-fugitive,~/gitrepos/vim-rails,~/gitrepos/vim-ruby,~/gitrepos/vim-erlang,~/gitrepos/git-vim,~/hgrepos/vimclojure/vim,~/gitrepos/snipmate.vim,$VIMRUNTIME,~/gitrepos/snipmate.vim/after
+set runtimepath=~/gitrepos/vimfiles,~/gitrepos/vim-fugitive,~/gitrepos/vim-rails,~/gitrepos/vim-ruby,~/gitrepos/vim-erlang,~/gitrepos/git-vim,~/hgrepos/vimclojure/vim,~/gitrepos/snipmate.vim,$VIMRUNTIME,~/gitrepos/snipmate.vim/after
 syntax on
 set nocompatible
 filetype plugin indent on
